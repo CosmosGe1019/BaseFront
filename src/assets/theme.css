@@ -1,0 +1,304 @@
+/* 赛博暗色主题 */
+[data-theme="cyber-dark"] {
+    --theme-bg: linear-gradient(120deg, #0a0f1a 0%, #1a1832 60%, #0a0f1a 100%);
+    --theme-main: #00ffe7;
+    --theme-button-hover: #00d6c1;
+    --theme-select-button: #2a3da1;
+    --theme-body: linear-gradient(120deg, #0a0f1a 0%, #1a1832 100%);
+    --theme-aside: linear-gradient(135deg, #181c2f 0%, #0a0f1a 100%);
+    --theme-msg-me: linear-gradient(90deg, #00ffe7 0%, #7f5cff 100%) !important;
+    --theme-msg-ai: linear-gradient(90deg, #00ffe7 0%, #7f5cff 100%) !important;
+    --theme-div: #181823;
+    --theme-text-main: #e6f7ff;
+    --theme-text-strong: #fff;
+    --theme-text-secondary: #8cf6ff;
+    --theme-click: #00ffe7;
+    /* 霓虹发光效果 */
+    --theme-neon-shadow: 0 0 8px #00ffe7, 0 0 16px #7f5cff;
+    --theme-card-bg: rgba(20, 24, 40, 0.96);
+    --theme-popup-bg: rgba(20, 24, 40, 0.98);
+    --theme-btn-bg: rgba(0, 255, 231, 0.12);
+    --theme-btn-bg-active: rgba(127, 92, 255, 0.18);
+    --theme-border: #2e3650;
+    --theme-divider: #23263a;
+}
+[data-theme="cyber-dark"] .ant-card,
+[data-theme="cyber-dark"] .ant-modal-content,
+[data-theme="cyber-dark"] .ant-drawer-content,
+[data-theme="cyber-dark"] .ant-popover-inner,
+[data-theme="cyber-dark"] .ant-dropdown-menu,
+[data-theme="cyber-dark"] .ant-select-dropdown,
+[data-theme="cyber-dark"] .ant-btn,
+[data-theme="cyber-dark"] .card,
+[data-theme="cyber-dark"] .popup,
+[data-theme="cyber-dark"] .setting-panel,
+[data-theme="cyber-dark"] .theme-setting-box {
+    background: var(--theme-card-bg) !important;
+    box-shadow: 0 2px 16px 0 #00ffe733, 0 0 8px #7f5cff22;
+    border: 1px solid var(--theme-border);
+}
+[data-theme="cyber-dark"] .ant-btn,
+[data-theme="cyber-dark"] .theme-btn {
+    background: var(--theme-btn-bg) !important;
+    border: 1px solid var(--theme-border);
+    color: var(--theme-main) !important;
+}
+[data-theme="cyber-dark"] .ant-btn:active,
+[data-theme="cyber-dark"] .ant-btn:focus,
+[data-theme="cyber-dark"] .theme-btn:active,
+[data-theme="cyber-dark"] .theme-btn:focus {
+    background: var(--theme-btn-bg-active) !important;
+}
+[data-theme="cyber-dark"] .ant-divider,
+[data-theme="cyber-dark"] .divider {
+    border-color: var(--theme-divider) !important;
+}
+
+/* 强力覆盖所有常见白色背景的盒子为深色，保证暗色主题下无白底 */
+[data-theme="cyber-dark"] .ant-card,
+/* 绿色霓虹风格阴影 */
+/* 小盒子区分度增强：更亮边框、绿色内阴影、渐变背景 */
+[data-theme="cyber-dark"] .ant-card,
+[data-theme="cyber-dark"] .ant-modal-content,
+[data-theme="cyber-dark"] .ant-drawer-content,
+[data-theme="cyber-dark"] .ant-popover-inner,
+[data-theme="cyber-dark"] .ant-dropdown-menu,
+[data-theme="cyber-dark"] .ant-select-dropdown,
+[data-theme="cyber-dark"] .ant-btn,
+[data-theme="cyber-dark"] .card,
+[data-theme="cyber-dark"] .popup,
+[data-theme="cyber-dark"] .setting-panel,
+[data-theme="cyber-dark"] .theme-setting-box {
+    background: linear-gradient(135deg, rgba(20,24,40,0.98) 60%, rgba(0,255,231,0.08) 100%) !important;
+    border: 1.5px solid #00ffe7 !important;
+    box-shadow:
+        0 0 0 2px #00ffae44 inset,
+        0 0 12px 2px #00ffaecc,
+        0 0 32px 4px #00ffe755;
+    border-radius: 12px;
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+}
+[data-theme="cyber-dark"] .ant-collapse-content,
+/* a-select 组件 placeholder 高亮 */
+[data-theme="cyber-dark"] .ant-select-selection-placeholder {
+    color: #8cf6ff !important;
+    opacity: 1 !important;
+}
+[data-theme="cyber-dark"] .ant-collapse-header,
+[data-theme="cyber-dark"] .ant-tabs-content,
+[data-theme="cyber-dark"] .ant-tabs-tabpane,
+[data-theme="cyber-dark"] .ant-list,
+[data-theme="cyber-dark"] .ant-list-item,
+[data-theme="cyber-dark"] .ant-form,
+[data-theme="cyber-dark"] .ant-form-item,
+[data-theme="cyber-dark"] .ant-picker,
+[data-theme="cyber-dark"] .ant-picker-panel,
+[data-theme="cyber-dark"] .ant-picker-content,
+[data-theme="cyber-dark"] .ant-message-notice-content,
+[data-theme="cyber-dark"] .ant-alert,
+[data-theme="cyber-dark"] .ant-alert-message,
+[data-theme="cyber-dark"] .ant-alert-description,
+[data-theme="cyber-dark"] .ant-tooltip-inner,
+[data-theme="cyber-dark"] .ant-menu,
+[data-theme="cyber-dark"] .ant-menu-item,
+[data-theme="cyber-dark"] .ant-menu-submenu,
+[data-theme="cyber-dark"] .ant-menu-submenu-title,
+[data-theme="cyber-dark"] .ant-menu-item-selected,
+[data-theme="cyber-dark"] .ant-menu-item-active,
+[data-theme="cyber-dark"] .ant-menu-item-open,
+[data-theme="cyber-dark"] .ant-menu-item-only-child,
+[data-theme="cyber-dark"] .ant-menu-submenu-active,
+[data-theme="cyber-dark"] .ant-menu-submenu-selected,
+[data-theme="cyber-dark"] .ant-menu-submenu-open,
+[data-theme="cyber-dark"] .ant-menu-submenu-only-child,
+[data-theme="cyber-dark"] .ant-pagination,
+[data-theme="cyber-dark"] .ant-pagination-item,
+[data-theme="cyber-dark"] .ant-pagination-prev,
+[data-theme="cyber-dark"] .ant-pagination-next,
+[data-theme="cyber-dark"] .ant-pagination-jump-next,
+[data-theme="cyber-dark"] .ant-pagination-jump-prev,
+[data-theme="cyber-dark"] .ant-pagination-options {
+    background: var(--theme-card-bg) !important;
+    color: #8cf6ff !important;
+    opacity: 1 !important;
+    border-color: var(--theme-border) !important;
+    box-shadow: 0 2px 16px 0 #00ffe733, 0 0 8px #7f5cff22;
+}
+
+/* 普通HTML标签全局深色适配，防止白底 */
+[data-theme="cyber-dark"] div,
+[data-theme="cyber-dark"] section,
+[data-theme="cyber-dark"] article,
+[data-theme="cyber-dark"] header,
+[data-theme="cyber-dark"] footer,
+[data-theme="cyber-dark"] main,
+[data-theme="cyber-dark"] aside,
+[data-theme="cyber-dark"] form,
+[data-theme="cyber-dark"] input,
+[data-theme="cyber-dark"] textarea,
+[data-theme="cyber-dark"] select,
+[data-theme="cyber-dark"] button,
+[data-theme="cyber-dark"] label,
+[data-theme="cyber-dark"] fieldset,
+[data-theme="cyber-dark"] legend,
+[data-theme="cyber-dark"] table,
+[data-theme="cyber-dark"] th,
+[data-theme="cyber-dark"] td,
+[data-theme="cyber-dark"] ul,
+[data-theme="cyber-dark"] ol,
+[data-theme="cyber-dark"] li {
+    background: var(--theme-card-bg) !important;
+    color: var(--theme-text-main) !important;
+     border-color: 1.5px solid #00ffe7 !important;
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+}
+
+/* 1. placeholder 字体高亮 */
+[data-theme="cyber-dark"] input::placeholder,
+[data-theme="cyber-dark"] textarea::placeholder {
+    color: #8cf6ff !important;
+    opacity: 1 !important;
+    border-radius: 10px;
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+ }
+/* 2. 边框更亮，便于区分 */
+[data-theme="cyber-dark"] input,
+[data-theme="cyber-dark"] textarea,
+[data-theme="cyber-dark"] select,
+[data-theme="cyber-dark"] .ant-input,
+[data-theme="cyber-dark"] .ant-input-affix-wrapper,
+[data-theme="cyber-dark"] .ant-select,
+[data-theme="cyber-dark"] .ant-select-selector,
+[data-theme="cyber-dark"] .ant-table,
+[data-theme="cyber-dark"] .ant-table-content,
+[data-theme="cyber-dark"] .ant-table-thead > tr > th,
+[data-theme="cyber-dark"] .ant-table-tbody > tr > td {
+    border-color: #3de0ff !important;
+}
+
+/* 3. a-table表头文字高亮 */
+[data-theme="cyber-dark"] .ant-table-thead > tr > th {
+    color: #00ffe7 !important;
+    font-weight: bold;
+    background: #181c2f !important;
+}
+
+/* a-table 表头所有文字、标题高亮，兼容所有表头结构 */
+[data-theme="cyber-dark"] .ant-table-thead .ant-table-cell,
+[data-theme="cyber-dark"] .ant-table-thead .ant-table-cell-title,
+[data-theme="cyber-dark"] .ant-table-thead .ant-table-header-column-title {
+    color: #00ffe7 !important;
+    font-weight: bold;
+    background: #181c2f !important;
+    text-shadow: 0 0 2px #00ffe7, 0 0 4px #7f5cff33;
+}
+
+
+
+
+[data-theme="cyber-dark"] body,
+[data-theme="cyber-dark"] .theme-main,
+[data-theme="cyber-dark"] .text-black,
+[data-theme="cyber-dark"] .font-bold,
+[data-theme="cyber-dark"] .font-extrabold {
+    color: var(--theme-text-strong) !important;
+    text-shadow: 0 0 2px #00ffe7, 0 0 4px #7f5cff33;
+}
+[data-theme="cyber-dark"] .text-gray-700,
+[data-theme="cyber-dark"] .text-base,
+[data-theme="cyber-dark"] .text-lg,
+[data-theme="cyber-dark"] .text-sm {
+    color: var(--theme-text-main) !important;
+}
+
+/* 主题样式文件，支持六种主题（含新主题） */
+/* 所有主题 aside 渐变色统一风格 */
+[data-theme="default"] {
+    --theme-bg: #f5f8ff;
+    --theme-main: #3b82f6;
+    --theme-click: #42adef;
+    --theme-button-hover: #1565e6;
+    --theme-select-button: #e0e7ef;
+    --theme-body: #e8eef8;
+    --theme-aside: linear-gradient(135deg, #e8f2f9 100%, #c7d2fe 0%);
+    --theme-msg-me: #3b82f6 !important;
+    --theme-msg-ai: #e0e7ef !important;
+    --theme-div: #f5f8ff;
+}
+
+[data-theme="pink"] {
+    --theme-bg: #fff0f6;
+    --theme-main: #fc46a1;
+    --theme-click: #ff5c8f;
+    --theme-button-hover: #f70f83;
+    --theme-select-button: #fbc7e2;
+    --theme-body: #fce3f0;
+    --theme-aside: linear-gradient(135deg, #fce7f3 100%, #fbc2eb 0%);
+    --theme-msg-me: #ec4899 !important;
+    --theme-msg-ai: #f9e2e7 !important;
+    --theme-div: #fff0f6;
+}
+
+[data-theme="brown"] {
+    --theme-bg: #f5e9e6;
+    --theme-main: #d8a864;
+    --theme-click: #d3af7c;
+    --theme-button-hover: #d6810b;
+    --theme-select-button: #f7ddba;
+    --theme-body: #fcebd5;
+    --theme-aside: linear-gradient(135deg, #f3e8e3 100%, #e7d7cf 0%);
+    --theme-msg-me: #a16207 !important;
+    --theme-msg-ai: #e7d7cf !important;
+    --theme-div: #f5e9e6;
+}
+
+[data-theme="gradient-blue-pink"] {
+    --theme-bg: linear-gradient(135deg, #c7d2fe 0%, #fbc2eb 100%);
+    --theme-main: #306beb;
+    --theme-button-hover: #0748d3;
+    --theme-click: #4e84f8;
+    --theme-text-main: #1e3a8a;
+    --theme-select-button: #c1c2fa;
+    --theme-body: linear-gradient(135deg, #c7d2fe 0%, #fbc2eb 100%);
+    --theme-aside: linear-gradient(135deg, #c7d2fe 0%, #fbc2eb 150%);
+    --theme-msg-me: #6366f1 !important;
+    --theme-msg-ai: #fbc2eb !important;
+    --theme-div: #ffdaf3;
+}
+
+[data-theme="new-theme"] {
+    --theme-bg: linear-gradient(135deg, #d1fae5 0%, #fef3c7 100%);
+    --theme-main: #10b981;
+    --theme-button-hover: #02a870;
+    --theme-click: #22e4a7;
+    --theme-select-button: #c4fae8;
+    --theme-body: linear-gradient(135deg, #d1fae5 0%, #fef3c7 150%);
+    --theme-aside: linear-gradient(135deg, #d1fae5 0%, #fef3c7 150%);
+    --theme-msg-me: #10b981 !important;
+    --theme-msg-ai: #fef3c7 !important;
+    --theme-div: #eaf9f4;
+}
+
+body {
+    background: var(--theme-bg);
+}
+
+.theme-main {
+    color: var(--theme-main);
+}
+
+.theme-aside {
+    background: var(--theme-aside);
+}
+
+.theme-msg-me {
+    background: var(--theme-msg-me);
+    color: #fff;
+}
+
+.theme-msg-ai {
+    background: var(--theme-msg-ai);
+    color: #333;
+}
+
+
